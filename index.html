@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" />		
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/animsition.css" />
+		<link rel="stylesheet" href="css/animate.css" />
 	</head>
 
 	<body>
@@ -35,11 +36,11 @@
 
 							<div class="collapse navbar-collapse navbar-right" id="top_menu">
 								<ul class="menu">
-									<li><a href="#">links</a></li>
-									<li><a href="#">links</a></li>
-									<li><a href="#">links</a></li>
-									<li><a href="#">links</a></li>
-									<li><a href="#">links</a></li>
+									<li><a href="#wedo">We do</a></li>
+									<li><a href="#ourworks">Our works</a></li>
+									<li><a href="#review">Reviews</a></li>
+									<li><a href="#ourteam">Our Team</a></li>
+									<li><a href="#contacts">Contacts</a></li>
 								</ul>								
 							</div>					
 						</div>
@@ -63,10 +64,8 @@
 					</div>
 				</div>
 			</header>
-		</div>
-
-		<div class="animsition" data-animsition-out-class="fade-out-up" data-animsition-out-duration="800">
-			<section class="we-do">
+		
+			<section id="wedo" class="we-do">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 col-sm-6">
@@ -103,29 +102,28 @@
 					</div>
 				</div>
 			</section>
-		</div>
-	
-		<div class=" animsition" data-animsition-out-class="fade-out-up" data-animsition-out-duration="800">
-			<section class="middle">
-				<div class="container">
-					<div class="row middle-row">
-						<div class="col-md-4 col-md-offset-3">
-							<form action="#" id="middle-email">							
-								<input type="email" name="email" placeholder="Enter Your email adress for newsletter" />
-							</form>						
-						</div>
-
-						<div class="col-md-3">
-							<button class="btn btn-subscibe">Subscribe</button>				
-						</div>					
-					</div>
-				</div>
-			</section>
 		</div>	
-
-		<section class="work">
+		
+		<section class="middle">
 			<div class="container">
-				<div class="row">
+				<div class="row middle-row">
+					<div class="col-md-4 col-md-offset-3">
+						<form action="#" id="middle-email" class="wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">							
+							<input type="email" name="email" placeholder="Enter Your email adress for newsletter" />
+						</form>						
+					</div>
+
+					<div class="col-md-3 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+						<button class="btn btn-subscibe">Subscribe</button>				
+					</div>					
+				</div>
+			</div>
+		</section>
+			
+
+		<section id="ourworks" class="work">
+			<div class="container">
+				<div class="row wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">
 					<div class="col-md-8 col-md-offset-2">
 						<div class="title-work">
 							<h2>Our <span class="orange">Works</span></h2>
@@ -134,7 +132,7 @@
 					</div>
 				</div>
 
-				<div class="row row-work">
+				<div class="row row-work wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">
 					<div class="col-md-3 col-sm-6 col-xs-12">
 						<div class="work-block">
 							<div class="img-wrap">
@@ -188,7 +186,7 @@
 					</div>
 				</div>
 
-				<div class="row row-work">
+				<div class="row row-work wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">
 					<div class="col-md-3 col-sm-6 col-xs-12">
 						<div class="work-block">
 							<div class="img-wrap">
@@ -250,7 +248,7 @@
 			</div>			
 		</section>
 
-		<section class="review">
+		<section id="review" class="review">
 			<div class="container">				  
 	         <div class="row">
 	            <div class="col-md-offset-2 col-md-8">
@@ -305,7 +303,7 @@
 			</div>			
 		</section>
 
-		<section class="team">
+		<section id="ourteam" class="team">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
@@ -374,7 +372,7 @@
 					<div class="col-md-4">
 						<div class="team-block">
 							<img src="img/andrii.jpg" class="img-responsive" alt="Photo team member">
-							<h4>Andrii Svchuk</h4>
+							<h4>Andrii Savchuk</h4>
 							<div class="social">
 								<a href="#"><img src="img/facebook.png"  class="img-responsive" alt="facebook"></a>
 								<a href="#"><img src="img/twitter.png"  class="img-responsive" alt="facebook"></a>
@@ -387,7 +385,7 @@
 			</div>
 		</section>
 
-		<footer class="main-footer">
+		<footer id="contacts" class="main-footer">
 			<div class="container">
 				<div class="row row-title">
 					<div class="col-md-8 col-md-offset-2">
@@ -443,20 +441,26 @@
 		<footer class="bottom-footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
-						<p>&copy; 2016 ipsum dolor sit.</p>
-					</div>
+					<div class="col-md-12">
+						<div class="copyright">
+							<p>&copy; 2016 ipsum dolor sit.</p>
+						</div>
 
-					<div class="col-md-4 col-md-offset-4">
-						<p class="design">Lorem ipsum dolor sit.</p>
+						<div class="design">
+							<p >Lorem ipsum dolor sit.</p>
+						</div>
 					</div>
 				</div>
 			</div>			
 		</footer>
-	
 		
-		<script src="js/jquery-2.2.2.js"></script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 		<script src="libs/bootstrap/js/bootstrap.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 
 		<script src="js/script.js"></script>
 		<script src="js/animsition.js"></script>
@@ -486,5 +490,16 @@
 				  });
 				});
 			</script>
+
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('a[href^="#"]').click(function(){
+						var el = $(this).attr('href');
+					$('body').animate({
+						scrollTop: $(el).offset().top}, 2000);
+					return false;
+					});
+				});
+		</script>
 	</body>
 </html>
